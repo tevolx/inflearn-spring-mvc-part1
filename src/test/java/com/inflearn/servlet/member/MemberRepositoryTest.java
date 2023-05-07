@@ -1,4 +1,4 @@
-package com.example.demo.servlet.member;
+package com.inflearn.servlet.member;
 
 import static org.assertj.core.api.Assertions.*;
 import static org.junit.jupiter.api.Assertions.*;
@@ -9,13 +9,8 @@ import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Test;
 
-/**
- * MemberRepositoryTest
- *
- * @author Jihoon Sang
- * @version 1.0.0
- * @since 2023. 04. 04.
- */
+import com.inflearn.servlet.member.MemberRepository;
+
 class MemberRepositoryTest {
 
 	MemberRepository memberRepository = MemberRepository.getInstance();
