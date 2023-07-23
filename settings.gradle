@@ -1,1 +1,7 @@
-rootProject.name = 'inflearn'
+//rootProject.name = 'inflearn'
+
+include(
+        "section1-to-5",
+        "section6",
+        "section7"
+)
