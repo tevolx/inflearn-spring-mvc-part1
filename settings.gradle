@@ -1,3 +1,1 @@
-//rootProject.name = 'inflearn'
-
-include("section1-to-5", "section6", "section7")
+include("chapter1-5", "chapter6", "chapter7")
