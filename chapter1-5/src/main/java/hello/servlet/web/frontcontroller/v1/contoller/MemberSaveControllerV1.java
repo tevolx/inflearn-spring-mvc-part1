@@ -10,14 +10,6 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-/**
- * MemberSaveControllerV1
- *
- * @author HYUN TAE PARK
- * @version 1.0.0
- * @since 2023. 05. 29.
- */
-
 public class MemberSaveControllerV1 implements ControllerV1 {
 
 	private final MemberRepository memberRepository = MemberRepository.getInstance();

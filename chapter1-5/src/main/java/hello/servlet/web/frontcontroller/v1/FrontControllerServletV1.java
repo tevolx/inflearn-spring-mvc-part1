@@ -14,20 +14,12 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-/**
- * FrontControllerV1
- *
- * @author HYUN TAE PARK
- * @version 1.0.0
- * @since 2023. 05. 29.
- */
-
 @WebServlet(name = "frontControllerServletV1", urlPatterns = "/front-controller/v1/*")
-public class FrontControllerV1 extends HttpServlet {
+public class FrontControllerServletV1 extends HttpServlet {
 
 	private final Map<String, ControllerV1> controllerMap = new HashMap<>();
 
-	public FrontControllerV1() {
+	public FrontControllerServletV1() {
 		controllerMap.put("/front-controller/v1/members/new-form", new MemberFormControllerV1());
 		controllerMap.put("/front-controller/v1/members/save", new MemberSaveControllerV1());
 		controllerMap.put("/front-controller/v1/members", new MemberListControllerV1());

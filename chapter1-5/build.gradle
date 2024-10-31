@@ -1,4 +1,5 @@
 plugins {
+	id 'war'
 	id 'java'
 	id 'org.springframework.boot'
 	id 'io.spring.dependency-management'
@@ -12,11 +13,16 @@ configurations {
 
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web'
-	implementation'org.apache.commons:commons-lang3'
+
+	//JSP
+	implementation 'org.apache.tomcat.embed:tomcat-embed-jasper'
+	implementation 'javax.servlet:jstl'
 
 	compileOnly 'org.projectlombok:lombok'
 
 	annotationProcessor 'org.projectlombok:lombok'
+
+	providedRuntime 'org.springframework.boot:spring-boot-starter-tomcat'
 
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
