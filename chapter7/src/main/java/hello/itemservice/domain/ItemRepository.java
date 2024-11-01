@@ -7,14 +7,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-/**
- * ItemRepository
- *
- * @author HYUN TAE PARK
- * @version 1.0.0
- * @since 2023. 07. 23.
- */
-
 @Repository
 public class ItemRepository {
 
